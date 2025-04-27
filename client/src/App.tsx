@@ -7,13 +7,13 @@ import Navbar from './components/Navbar'
 import Partnership from './components/Partnership'
 import Popup from './components/Popup'
 import Projects from './components/Projects'
-import Recomendes from './components/Recomendes'
 import SecondSection from './components/SecondSection'
 import Services from './components/Services'
 import StickySocail from './components/StickySocail'
 import SuccessStories from './components/SuccessStories'
 import Tagline from './components/Tagline'
 import WhySection from './components/WhySection'
+import WisdomWellSection from './components/WisdomWellSection'
 
 function App() {
 
@@ -31,7 +31,7 @@ function App() {
       <Partnership />
       <Projects id="projects" />
       <Mentors id="mentors" />
-      <Recomendes />
+      <WisdomWellSection />
       <HeroSection />
       <WhySection />
       <Footer />

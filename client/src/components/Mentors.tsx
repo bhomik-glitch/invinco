@@ -15,7 +15,6 @@ import pooja from "../assets/mentor/pooja.png"
 import hema from "../assets/mentor/hema.png"
 import tanugola from "../assets/mentor/tanugola.jpeg"
 
-
 interface MentorData {
   name: string;
   title?: string;
@@ -180,8 +179,6 @@ const Mentors: React.FC<{ id?: string }> = ({ id }) => {
           ))}
         </div>
 
-       
-
         <div className="text-center mb-12 mt-32">
           <h2 className="text-4xl md:text-5xl font-bold text-[#2d4b41] mb-4">
           OUR MENTORS
@@ -213,9 +210,6 @@ const Mentors: React.FC<{ id?: string }> = ({ id }) => {
             </div>
           ))}
         </div>
-
-       
-
       </div>
     </section>
   );

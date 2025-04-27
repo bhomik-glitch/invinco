@@ -1,58 +1,38 @@
 import React from 'react';
-import bhomik from "../assets/recomendeds/bhomik.jpg.jpg";
-import image2 from "../assets/recomendeds/image2.png";
+
+// Import photos
+import AtharvPhoto from "../assets/client_photo/Atharv.jpg";
+import RudranshPhoto from "../assets/client_photo/Rudransh.jpg";
+import AdityaPhoto from "../assets/client_photo/Aditya.jpg";
+import SankalpPhoto from "../assets/client_photo/Sankalp.jpg";
+import BhomikPhoto from "../assets/client_photo/bhomik.jpg";
 
 // Gallery data
 const galleryData = [
   {
-    image: bhomik,
-    name: "Bhomik Pilkhwal",
-    text: "Ex Invincio student currently at IIT Delhi"
+    name: "ATHARV",
+    text: "Atharv, batch- DSTL 39818, SSB-19 SSB PRAYAGRAJ, Chest No. 7",
+    photo: AtharvPhoto
   },
   {
-    image: image2,
-    name: "Aryan Sharma",
-    text: "Selected for Indian Military Academy"
+    name: "RUDRANSH",
+    text: "Rudransh Kishore, Batch- KNDA 40815, SSB-20 SSB, Chest No.- 02",
+    photo: RudranshPhoto
   },
   {
-    image: bhomik,
-    name: "Priya Patel",
-    text: "Commissioned in Indian Air Force"
+    name: "ADITYA",
+    text: " Aditya Gupta, batch- KNDA 40816, SSB - 20 SSB, Chest No.- 09",
+    photo: AdityaPhoto
   },
   {
-    image: image2,
-    name: "Rahul Kumar",
-    text: "Selected for Naval Academy"
+    name: "SANKALP",
+    text: "Sankalp Jaiswal , batch- PNDA 72255, SSB-21 SSB, Chest No.- 03",
+    photo: SankalpPhoto
   },
   {
-    image: bhomik,
-    name: "Ananya Singh",
-    text: "Joined National Defence Academy"
-  },
-  {
-    image: image2,
-    name: "Vikram Malhotra",
-    text: "Selected for Officers Training Academy"
-  },
-  {
-    image: bhomik,
-    name: "Neha Gupta",
-    text: "Commissioned in Indian Army"
-  },
-  {
-    image: image2,
-    name: "Rajesh Verma",
-    text: "Selected for Technical Entry Scheme"
-  },
-  {
-    image: bhomik,
-    name: "Kavita Reddy",
-    text: "Joined Air Force Academy"
-  },
-  {
-    image: image2,
-    name: "Amit Desai",
-    text: "Selected for Combined Defence Services"
+    name: "BHOMIK",
+    text: "ex invincio student currently at IIT Delhi",
+    photo: BhomikPhoto
   }
 ];
 
@@ -67,25 +47,26 @@ const SuccessStories: React.FC = () => {
         
         {/* Scrolling container */}
         <div className="overflow-hidden">
-          <div className="flex animate-marquee hover:pause">
+          <div className="flex animate-[marquee_20s_linear_infinite] hover:pause">
             {/* First set of cards */}
             {galleryData.map((item, index) => (
               <div 
                 key={`first-${index}`}
-                className="flex-none w-80 bg-white rounded-xl overflow-hidden shadow-md transition-all duration-300 hover:shadow-xl mx-4"
+                className="flex-none w-96 bg-white rounded-xl overflow-hidden shadow-md transition-all duration-300 hover:shadow-xl mx-4"
               >
                 <div className="p-6">
-                  <div className="w-56 h-56 rounded-full overflow-hidden border-4 border-[#eaeeed] mb-4 mx-auto">
+                  {/* Photo section */}
+                  <div className="w-48 h-48 mx-auto rounded-full overflow-hidden border-4 border-[#eaeeed] mb-6">
                     <img
-                      src={item.image}
+                      src={item.photo}
                       alt={item.name}
-                      className="object-cover object-center w-full h-full"
+                      className="w-full h-full object-cover"
                     />
                   </div>
                   <h3 className="text-xl font-bold text-[#2d4b41] mb-2 text-center">
                     {item.name}
                   </h3>
-                  <p className="text-gray-600 text-sm text-center">
+                  <p className="text-gray-600 text-sm text-center mb-4">
                     {item.text}
                   </p>
                 </div>
@@ -95,20 +76,21 @@ const SuccessStories: React.FC = () => {
             {galleryData.map((item, index) => (
               <div 
                 key={`second-${index}`}
-                className="flex-none w-80 bg-white rounded-xl overflow-hidden shadow-md transition-all duration-300 hover:shadow-xl mx-4"
+                className="flex-none w-96 bg-white rounded-xl overflow-hidden shadow-md transition-all duration-300 hover:shadow-xl mx-4"
               >
                 <div className="p-6">
-                  <div className="w-56 h-56 rounded-full overflow-hidden border-4 border-[#eaeeed] mb-4 mx-auto">
+                  {/* Photo section */}
+                  <div className="w-48 h-48 mx-auto rounded-full overflow-hidden border-4 border-[#eaeeed] mb-6">
                     <img
-                      src={item.image}
+                      src={item.photo}
                       alt={item.name}
-                      className="object-cover object-center w-full h-full"
+                      className="w-full h-full object-cover"
                     />
                   </div>
                   <h3 className="text-xl font-bold text-[#2d4b41] mb-2 text-center">
                     {item.name}
                   </h3>
-                  <p className="text-gray-600 text-sm text-center">
+                  <p className="text-gray-600 text-sm text-center mb-4">
                     {item.text}
                   </p>
                 </div>
