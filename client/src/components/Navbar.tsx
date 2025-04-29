@@ -98,9 +98,11 @@ const links: NavLink[] = [
   }
 ];
 
+interface NavbarProps {
+  onServiceSelect: (service: string | null) => void;
+}
 
-
-const Navbar = () => {
+const Navbar: React.FC<NavbarProps> = ({ onServiceSelect }) => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const [activeDropdown, setActiveDropdown] = useState<number | null>(null);
   const dropdownRefs = useRef<Array<HTMLDivElement | null>>([]);
@@ -121,7 +123,7 @@ const Navbar = () => {
     };
   }, [activeDropdown]);
 
-  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>, external?: boolean) => {
+  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>, external?: boolean, serviceName?: string) => {
     if (external) return; // Don't prevent default for external links
     
     e.preventDefault();
@@ -132,6 +134,9 @@ const Navbar = () => {
         element.scrollIntoView({ behavior: 'smooth' });
         setIsOpen(false);
         setActiveDropdown(null);
+        if (serviceName) {
+          onServiceSelect(serviceName);
+        }
       }
     }
   };
@@ -182,7 +187,7 @@ const Navbar = () => {
                       <a
                         key={idx}
                         href={item.href}
-                        onClick={(e) => handleClick(e, item.external)}
+                        onClick={(e) => handleClick(e, item.external, item.name)}
                         target={item.external ? "_blank" : undefined}
                         rel={item.external ? "noopener noreferrer" : undefined}
                         className="block px-4 py-2 text-[#2d4b41] hover:bg-gray-100 hover:text-[#718979] transition-colors duration-200"
@@ -257,7 +262,7 @@ const Navbar = () => {
                       <a
                         key={idx}
                         href={item.href}
-                        onClick={(e) => handleClick(e, item.external)}
+                        onClick={(e) => handleClick(e, item.external, item.name)}
                         target={item.external ? "_blank" : undefined}
                         rel={item.external ? "noopener noreferrer" : undefined}
                         className="py-2 text-[#2d4b41] hover:text-[#718979] transition-colors duration-200 text-base"

@@ -21,13 +21,13 @@ const Projects: React.FC<{ id?: string }> = ({ id }) => {
       images: [pune1, pune2, pune3, pune4]
     },
     {
-      title: "Second Project at SSB Guide Defense Academy Ambala",
+      title: "Second Project at SSB Guide Defense Academy, Ambala",
       description: "Conducted our second project, fostering skill development and leadership training through immersive, real-world exercises.",
       images: [ambala]
     },
     {
       title: "Third Project at Sainik School, Ambikapur",
-      description: "Launched our third project, guiding young cadets with structured mentoring, practical assessments, and holistic personality development.",
+      description: "Hallmark personality development and infrastructure creation project at Sainik School, catapulting the training of aspirants to greater heights",
       images: [ambikapur]
     },
     {

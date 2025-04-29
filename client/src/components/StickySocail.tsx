@@ -1,4 +1,3 @@
-
 import { FaLinkedin, FaInstagram, FaYoutube , FaWhatsapp} from 'react-icons/fa'
 
 const StickySocail = () => {
@@ -6,7 +5,7 @@ const StickySocail = () => {
     <div className="fixed left-0 top-1/2 -translate-y-1/2 z-50">
       <div className="flex flex-col space-y-4 p-2 bg-[#2c4d42] backdrop-blur-sm rounded-r-lg">
         <a 
-          href="https://www.linkedin.com/in/ankur4b" 
+          href="https://www.linkedin.com/company/invincio-services" 
           target="_blank" 
           rel="noopener noreferrer" 
           className="text-white hover:text-[#718979] transition-colors"
@@ -15,7 +14,7 @@ const StickySocail = () => {
           <span className="sr-only">LinkedIn profile</span>
         </a>
         <a 
-          href="https://www.instagram.com/lt_col_ankur_sabharwal" 
+          href="https://www.instagram.com/invincio_services" 
           target="_blank" 
           rel="noopener noreferrer" 
           className="text-white hover:text-[#718979] transition-colors"
@@ -24,7 +23,7 @@ const StickySocail = () => {
           <span className="sr-only">Instagram profile</span>
         </a>
         <a 
-          href="https://youtube.com/@learntolivetolearn" 
+          href="https://youtube.com/@invincioservices" 
           target="_blank" 
           rel="noopener noreferrer" 
           className="text-white hover:text-[#718979] transition-colors"
@@ -39,9 +38,7 @@ const StickySocail = () => {
           className="text-white hover:text-[#718979] transition-colors"
         >
           <FaWhatsapp className="w-6 h-6 md:w-8 md:h-8" />
-          <span className="sr-only">
-             WhatsApp
-             </span>
+          <span className="sr-only">WhatsApp</span>
         </a>
       </div>
     </div>

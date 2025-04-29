@@ -64,9 +64,6 @@ const SecondSection = () => {
                   alt="Lt Col Ankur Sabharwal"
                   className="w-full max-w-sm rounded-lg object-cover shadow-lg"
                 />
-                <p className="text-lg font-medium text-[#2d4b41] leading-relaxed">
-                  Lt Col Ankur Sabharwal
-                </p>
               </div>
               <div className="grid grid-cols-2 gap-3">
                 <div>
@@ -142,9 +139,6 @@ const SecondSection = () => {
                   alt="Lt Col Ankur Sabharwal"
                   className="w-full max-w-md rounded-lg object-cover shadow-lg"
                 />
-                <p className="text-lg font-medium text-[#2d4b41] leading-relaxed">
-                  Lt Col Ankur Sabharwal
-                </p>
               </div>
               <div className="flex gap-3 mt-3">
                 <div>
@@ -198,9 +192,6 @@ const SecondSection = () => {
                   alt="Lt Col Ankur Sabharwal"
                   className="w-72 rounded-lg object-cover shadow-lg"
                 />
-                <p className="text-lg font-medium text-[#2d4b41] leading-relaxed mt-2">
-                  Lt Col Ankur Sabharwal
-                </p>
               </div>
               <div className="flex flex-col items-center">
                 <img
@@ -226,21 +217,21 @@ const SecondSection = () => {
           </motion.div>
 
           <motion.div variants={itemVariants} className="max-w-3xl">
-            <blockquote className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#2d4b41] mb-6 md:mb-8 leading-tight">
+            <blockquote className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#2d4b41] mb-4 leading-tight">
               "When preparation meets purpose, transformation happens."
             </blockquote>
+
+            <p className="text-xl md:text-2xl lg:text-2xl font-medium text-[#2d4b41] mb-8 italic leading-relaxed">
+              "I've seen transformation in both soldiers and CEOs. It's the same engine and drivers: clarity, conviction, and courage."
+            </p>
             
-            <p className="text-lg md:text-xl text-gray-600 mb-6 md:mb-8">
-              — Lt Col Ankur Sabharwal (Military Veteran) <br />
+            <p className="text-lg md:text-xl text-gray-600 mb-8">
+              — Lt Col Ankur Sabharwal, Military Veteran <br />
               CEO | Military Psychologist | Ex-VP Philips
             </p>
 
             <p className="text-xl md:text-2xl lg:text-3xl font-semibold text-gray-700 leading-relaxed">
               At Invincio Services, we don't just train. We mold character, unlock potential, and instill the grit to lead from the front—be it in defence, corporate corridors, or community spaces.
-            </p>
-
-            <p className="text-lg md:text-xl lg:text-2xl font-medium text-[#2d4b41] mt-6 md:mt-8 italic leading-relaxed">
-              "I've seen transformation in both soldiers and CEOs. It's the same engine and drivers: clarity, conviction, and courage."
             </p>
           </motion.div>
         </motion.div>

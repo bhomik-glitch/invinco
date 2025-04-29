@@ -163,7 +163,7 @@ const services: Service[] = [
       },
       {
         title: "Behavioral Training",
-        description: "Behavioural & Emotional Intelligence Training",
+        description: "Behaviourial & Emotional Intelligence Training",
         icon: <FaBrain className="w-12 h-12" />
       },
       {
@@ -390,7 +390,11 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ service }) => {
   );
 };
 
-const Services: React.FC<{ id?: string }> = ({ id }) => {
+const Services: React.FC<{ id?: string; selectedService?: string | null }> = ({ id, selectedService }) => {
+  const filteredServices = selectedService 
+    ? services.filter(service => service.title === selectedService)
+    : services;
+
   return (
     <section id={id} className="py-32 bg-[#eaeeed]/90">
       <div className="container mx-auto px-4">
@@ -406,14 +410,9 @@ const Services: React.FC<{ id?: string }> = ({ id }) => {
             modules={[Autoplay]}
             spaceBetween={30}
             slidesPerView={1}
-            autoplay={{
-              delay: 5000,
-              disableOnInteraction: false,
-            }}
-            loop={true}
             className="mySwiper"
           >
-            {services.map((service, index) => (
+            {filteredServices.map((service, index) => (
               <SwiperSlide key={index}>
                 <ServiceCard service={service} />
               </SwiperSlide>

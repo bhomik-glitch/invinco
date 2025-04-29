@@ -14,20 +14,21 @@ import SuccessStories from './components/SuccessStories'
 import Tagline from './components/Tagline'
 import WhySection from './components/WhySection'
 import WisdomWellSection from './components/WisdomWellSection'
+import { useState } from 'react'
 
 function App() {
-
+  const [selectedService, setSelectedService] = useState<string | null>(null);
 
   return (<>
     <div className="poppins">
       <StickySocail />
       <Popup />
-      <Navbar />
+      <Navbar onServiceSelect={setSelectedService} />
       <Tagline />
       <SecondSection />
       <SuccessStories />
       <MissionVission />
-      <Services id="services" />
+      <Services id="services" selectedService={selectedService} />
       <Partnership />
       <Projects id="projects" />
       <Mentors id="mentors" />

@@ -65,96 +65,123 @@ const Partnership = () => {
           </div>
 
           {/* Podcast Section */}
-          <div className="bg-[#eaeeed] rounded-xl shadow-lg p-8 max-w-4xl mx-auto text-center md:text-left">
-  <h3 className="text-3xl font-bold text-[#2d4b41] mb-6">
-        Inspirational Speaker, Podcaster, Panelist
-  </h3>
-  <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+          <div className="bg-[#eaeeed] rounded-xl shadow-lg p-8 max-w-7xl mx-auto text-center">
+            <h3 className="text-3xl font-bold text-[#2d4b41] mb-8 text-center">
+              Press Play. Start Evolving.
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
 
-    <div className="items-center mb-8">
-      <div className="aspect-w-16 aspect-h-9">
-        <iframe
-          src="https://www.youtube.com/embed/P-9nde1-BzU"
-          title="Infinite Talk Podcast"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-          className="w-full h-[250px] rounded-lg shadow-md"
-        ></iframe>
-      </div>
-      <div className="text-center mt-4">
-        <h4 className="text-2xl font-semibold mb-4">
-          Featured Podcast
-        </h4>
-        <a 
-          href="https://youtu.be/P-9nde1-BzU"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center px-6 py-3 bg-[#2d4b41] text-white rounded-lg hover:bg-[#3a5f52] transition-colors"
-        >
-          <span className="mr-2">Watch Now</span>
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-            <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clipRule="evenodd" />
-          </svg>
-        </a>
-      </div>
-    </div>
-    
-    {/* Second Podcast */}
-    <div className="items-center mb-8">
-      <div className="aspect-w-16 aspect-h-9">
-        <iframe
-          src="https://www.youtube.com/embed/-UFYWKpxyr0"
-          title="Second Podcast"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-          className="w-full h-[250px] rounded-lg shadow-md"
-        ></iframe>
-      </div>
-      <div className="text-center mt-4">
-        <h4 className="text-2xl font-semibold mb-4">Infinite Talk Collaboration</h4>
-        <a 
-          href="https://youtu.be/-UFYWKpxyr0?si=Ylb42k3CkawzYWXk"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center px-6 py-3 bg-[#2d4b41] text-white rounded-lg hover:bg-[#3a5f52] transition-colors"
-        >
-          <span className="mr-2">Watch Now</span>
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-            <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clipRule="evenodd" />
-          </svg>
-        </a>
-      </div>
-    </div>
+              <div className="items-center mb-8">
+                <div className="aspect-w-16 aspect-h-9">
+                  <iframe
+                    src="https://www.youtube.com/embed/P-9nde1-BzU"
+                    title="Infinite Talk Podcast"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    className="w-full h-[250px] rounded-lg shadow-md"
+                  ></iframe>
+                </div>
+                <div className="text-center mt-4">
+                  <h4 className="text-2xl font-semibold mb-4">
+                    Featured Podcast
+                  </h4>
+                  <a 
+                    href="https://youtu.be/P-9nde1-BzU"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center px-6 py-3 bg-[#2d4b41] text-white rounded-lg hover:bg-[#3a5f52] transition-colors"
+                  >
+                    <span className="mr-2">Watch Now</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clipRule="evenodd" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
 
-    {/* Third Podcast */}
-    <div className="items-center mb-8">
-      <div className="aspect-w-16 aspect-h-9">
-        <iframe
-          src="https://www.youtube.com/embed/bSRk9usV8Cg"
-          title="Podcast with Saumya Singh"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-          className="w-full h-[250px] rounded-lg shadow-md"
-        ></iframe>
-      </div>
-      <div className="text-center mt-4">
-        <h4 className="text-2xl font-semibold mb-4">Podcast with Saumya Singh</h4>
-        <a 
-          href="https://www.youtube.com/watch?v=bSRk9usV8Cg"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center px-6 py-3 bg-[#2d4b41] text-white rounded-lg hover:bg-[#3a5f52] transition-colors"
-        >
-          <span className="mr-2">Watch Now</span>
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-            <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clipRule="evenodd" />
-          </svg>
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
+              {/* Second Podcast */}
+              <div className="items-center mb-8">
+                <div className="aspect-w-16 aspect-h-9">
+                  <iframe
+                    src="https://www.youtube.com/embed/-UFYWKpxyr0"
+                    title="Second Podcast"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    className="w-full h-[250px] rounded-lg shadow-md"
+                  ></iframe>
+                </div>
+                <div className="text-center mt-4">
+                  <h4 className="text-2xl font-semibold mb-4">Infinite Talk Collaboration</h4>
+                  <a 
+                    href="https://youtu.be/-UFYWKpxyr0?si=Ylb42k3CkawzYWXk"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center px-6 py-3 bg-[#2d4b41] text-white rounded-lg hover:bg-[#3a5f52] transition-colors"
+                  >
+                    <span className="mr-2">Watch Now</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clipRule="evenodd" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
 
+              {/* Third Podcast */}
+              <div className="items-center mb-8">
+                <div className="aspect-w-16 aspect-h-9">
+                  <iframe
+                    src="https://www.youtube.com/embed/bSRk9usV8Cg"
+                    title="Podcast with Saumya Singh"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    className="w-full h-[250px] rounded-lg shadow-md"
+                  ></iframe>
+                </div>
+                <div className="text-center mt-4">
+                  <h4 className="text-2xl font-semibold mb-4">Podcast with Saumya Singh</h4>
+                  <a 
+                    href="https://www.youtube.com/watch?v=bSRk9usV8Cg"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center px-6 py-3 bg-[#2d4b41] text-white rounded-lg hover:bg-[#3a5f52] transition-colors"
+                  >
+                    <span className="mr-2">Watch Now</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clipRule="evenodd" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+
+              {/* Fourth Podcast */}
+              <div className="items-center mb-8">
+                <div className="aspect-w-16 aspect-h-9">
+                  <iframe
+                    src="https://www.youtube.com/embed/YW84uCtwBs8"
+                    title="New Podcast"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    className="w-full h-[250px] rounded-lg shadow-md"
+                  ></iframe>
+                </div>
+                <div className="text-center mt-4">
+                  <h4 className="text-2xl font-semibold mb-4">Featured Interview</h4>
+                  <a 
+                    href="https://youtu.be/YW84uCtwBs8?si=iVtwiZWS-dlzV1ra"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center px-6 py-3 bg-[#2d4b41] text-white rounded-lg hover:bg-[#3a5f52] transition-colors"
+                  >
+                    <span className="mr-2">Watch Now</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clipRule="evenodd" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
 
         </div>
       </div>

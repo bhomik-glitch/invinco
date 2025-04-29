@@ -48,7 +48,7 @@ const mentorData: MentorData[] = [
     imageUrl: ColRanjit,
   },
   {
-    name: "Colonel Karandeep Singh",
+    name: "Col Karandeep Singh",
     description:
       "Veteran with 27 years in military and corporate leadership. Expert in personality development, assessing 2,100+ candidates, and mentoring future leaders.",
     imageUrl: ColKarandeepSingh,
@@ -62,25 +62,25 @@ const mentorData: MentorData[] = [
   {
     name: "Havildar Sanjay Kumar Choubey",
     description:
-      " Hav Sanjay Kumar Choubey, a Kargil War veteran from Bihar, served with 1st BIHAR in the Batalik Sector. Former Havildar Major at 34 SSB, Allahabad, he is dedicated to training future defence aspirants. ",
+      " Hav Sanjay Kumar Choubey, a Kargil War veteran from Bihar, served with 1st BIHAR in the Batalik Sector. Former Havildar Major at 34 SSB,  Allahabad, he is dedicated to training future defence aspirants. ",
     imageUrl: havilSanjay,
   },
   {
     name: "Havildar Rajesh Kumar",
     description:
-      "Havildar Rajesh Kumar, a veteran from Punjab, served with 6 Dogra in Siachen and Manipur. Former Havildar Major at 11 SSB,  llahabad, he is dedicated to mentoring defence aspirants.",
+      "Havildar Rajesh Kumar, a veteran from Punjab, served with 6 Dogra in Siachen and Manipur. Former Havildar Major at 11 SSB, Allahabad, he is dedicated to mentoring defence aspirants.",
     imageUrl: havilRajest,
   },
   {
     name: "Prashita Dubey",
     description:
-      "BA Honours English from LSR, former Social Media Head at Kalakriti (UN Millennium Fellowship). Now at Invincio as Social  edia & Outreach Executive. Proud to have her as our first permanent team member.",
+      "BA Honours English from LSR, former Social Media Head at Kalakriti (UN Millennium Fellowship). Now at Invincio as Social Media & Outreach Executive. Proud to have her as our first permanent team member.",
     imageUrl: pratishta,
   },
   {
     name: "Radhika Bali",
     description:
-      "Radhika Bali, Presence Sculptor & Image Consultant, empowers professionals in executive presence, communication, and  randing. With 24+ years of experience, she is the Founder of Aक्स by Radhika and PSAI Delhi Chapter President.",
+      "Radhika Bali, Presence Sculptor & Image Consultant, empowers professionals in executive presence, communication, and branding. With 24+ years of experience, she is the Founder of Aक्स by Radhika and PSAI Delhi Chapter President.",
     imageUrl: radhika,
   },
   {

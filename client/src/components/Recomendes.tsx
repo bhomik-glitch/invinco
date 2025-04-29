@@ -15,7 +15,7 @@ const linkedInProfiles = [
     video: ATHARV
   },
   {
-    name: "CAPT SHREYAS",
+    name: "SHREYAS",
     text: "PROUDLY SERVING THE INDIAN ARMY ON NORTHER BORDERS",
     video: CAPT
   },
