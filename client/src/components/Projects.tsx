@@ -31,7 +31,7 @@ const Projects: React.FC<{ id?: string }> = ({ id }) => {
       images: [ambikapur]
     },
     {
-      title: "Katurpula Project for class 12th",
+      title: "Kapurthala Project for class 12th",
       description: "A comprehensive training program designed specifically for class 12th students, focusing on academic excellence and career guidance.",
       images: [katurpula1, katurpula2, katurpula3, katurpula4, katurpula5]
     }

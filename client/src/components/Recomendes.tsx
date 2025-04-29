@@ -15,8 +15,8 @@ const linkedInProfiles = [
     video: ATHARV
   },
   {
-    name: "CAPT",
-    text: "RECOMMENDED FROM NSB KOLKATA FOR SSC GS(X) ENTRY",
+    name: "CAPT SHREYAS",
+    text: "PROUDLY SERVING THE INDIAN ARMY ON NORTHER BORDERS",
     video: CAPT
   },
   {

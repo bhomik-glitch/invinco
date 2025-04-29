@@ -96,7 +96,7 @@ const SecondSection = () => {
                     className="w-full h-40 rounded-lg object-cover shadow-lg object-80"
                   />
                   <p className="text-lg font-medium text-[#2d4b41] leading-relaxed">
-                    TRAINING THE TRAINER
+                    TRAINING THE TRAINERS
                   </p>
                 </div>
                 <div>
@@ -106,7 +106,7 @@ const SecondSection = () => {
                     className="w-full h-40 rounded-lg object-cover shadow-lg"
                   />
                   <p className="text-lg font-medium text-[#2d4b41] leading-relaxed">
-                    COOPERATE MEETING
+                    GLOBAL CUSTOMER EXPERIENCE MEET
                   </p>
                 </div>
               </div>
@@ -154,7 +154,7 @@ const SecondSection = () => {
                     className="w-48 h-48 rounded-lg object-cover shadow-lg object-80"
                   />
                   <p className="text-lg font-medium text-[#2d4b41] leading-relaxed">
-                    TRAINING THE TRAINER
+                    TRAINING THE TRAINERS
                   </p>
                 </div>
                 <div>
@@ -164,7 +164,7 @@ const SecondSection = () => {
                     className="w-48 h-48 rounded-lg object-cover shadow-lg"
                   />
                   <p className="text-lg font-medium text-[#2d4b41] leading-relaxed">
-                    COOPERATE MEETING
+                    GLOBAL CUSTOMER EXPERIENCE MEET
                   </p>
                 </div>
               </div>
@@ -209,7 +209,7 @@ const SecondSection = () => {
                   className="w-60 h-60 rounded-lg object-cover shadow-lg object-80"
                 />
                 <p className="text-lg font-medium text-[#2d4b41] leading-relaxed mt-2">
-                  TRAINING THE TRAINER
+                  TRAINING THE TRAINERS
                 </p>
               </div>
               <div className="flex flex-col items-center">
@@ -219,7 +219,7 @@ const SecondSection = () => {
                   className="w-60 h-60 rounded-lg object-cover shadow-lg"
                 />
                 <p className="text-lg font-medium text-[#2d4b41] leading-relaxed mt-2">
-                  COOPERATE MEETING
+                  GLOBAL CUSTOMER EXPERIENCE MEET
                 </p>
               </div>
             </div>
