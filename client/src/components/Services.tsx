@@ -410,6 +410,11 @@ const Services: React.FC<{ id?: string; selectedService?: string | null }> = ({ 
             modules={[Autoplay]}
             spaceBetween={30}
             slidesPerView={1}
+            autoplay={{
+              delay: 30000, // 30 seconds delay
+              disableOnInteraction: false,
+            }}
+            loop={true}
             className="mySwiper"
           >
             {filteredServices.map((service, index) => (
