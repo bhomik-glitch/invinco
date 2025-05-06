@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
           {/* Social Links */}
           <div className="flex space-x-3">
             <a 
-              href="https://www.linkedin.com/company/invincio-services" 
+              href="http://www.linkedin.com/in/ankur4b" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="hover:text-[#718979] transition-colors"
@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
               <FaLinkedin className="w-5 h-5" />
             </a>
             <a 
-              href="https://www.instagram.com/invincio_services" 
+              href="https://www.instagram.com/lt_col_ankur_sabharwal/" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="hover:text-[#718979] transition-colors"
@@ -25,7 +25,7 @@ const Footer: React.FC = () => {
               <FaInstagram className="w-5 h-5" />
             </a>
             <a 
-              href="https://youtube.com/@invincioservices" 
+              href="https://www.youtube.com/@learntolivetolearn" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="hover:text-[#718979] transition-colors"
