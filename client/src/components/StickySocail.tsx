@@ -1,4 +1,4 @@
-import { FaLinkedin, FaInstagram, FaYoutube , FaWhatsapp} from 'react-icons/fa'
+import { FaLinkedin, FaInstagram, FaYoutube, FaWhatsapp, FaFacebook } from 'react-icons/fa'
 
 const StickySocail = () => {
   return (
@@ -39,6 +39,15 @@ const StickySocail = () => {
         >
           <FaWhatsapp className="w-6 h-6 md:w-8 md:h-8" />
           <span className="sr-only">WhatsApp</span>
+        </a>
+        <a 
+          href="https://www.facebook.com/share/16JtoVqZTx/?mibextid=wwXIfr"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-white hover:text-[#718979] transition-colors"
+        >
+          <FaFacebook className="w-6 h-6 md:w-8 md:h-8" />
+          <span className="sr-only">Facebook page</span>
         </a>
       </div>
     </div>

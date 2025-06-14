@@ -1,12 +1,13 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Autoplay } from 'swiper/modules'
-import { FaChartLine, FaUserTie, FaRoad, FaChartBar, FaLaptop, FaBriefcase, FaTrophy, FaUsers, FaGlobe, FaBrain, FaHandshake, FaHeart, FaMapMarkedAlt, FaGraduationCap, FaBuilding, FaUserCheck, FaFemale, FaLanguage } from 'react-icons/fa'
+import { Autoplay, Navigation } from 'swiper/modules'
+import { FaChevronLeft, FaChevronRight, FaChartLine, FaUserTie, FaRoad, FaChartBar, FaLaptop, FaBriefcase, FaTrophy, FaUsers, FaGlobe, FaBrain, FaHandshake, FaHeart, FaMapMarkedAlt, FaGraduationCap, FaBuilding, FaUserCheck, FaFemale, FaLanguage } from 'react-icons/fa'
 import offlineClasses from "../assets/offlineclasses.jpeg";
 import onlineClasses from "../assets/onlineClasses.jpeg";
 import cooperateTraining from "../assets/cooperateTraining2.jpeg"
 import sunny from "../assets/mentor/sunny.png"
-
+import 'swiper/css';
+import 'swiper/css/navigation';
 
 interface Pedagogy {
   title: string;
@@ -395,6 +396,8 @@ const Services: React.FC<{ id?: string; selectedService?: string | null }> = ({ 
     ? services.filter(service => service.title === selectedService)
     : services;
 
+  const swiperRef = useRef<any>(null);
+
   return (
     <section id={id} className="py-32 bg-[#eaeeed]/90">
       <div className="container mx-auto px-4">
@@ -405,24 +408,45 @@ const Services: React.FC<{ id?: string; selectedService?: string | null }> = ({ 
           <div className="w-32 h-1 bg-[#718979] mx-auto mb-6"></div>
         </div>
 
-        <div className="w-full">
-          <Swiper
-            modules={[Autoplay]}
-            spaceBetween={30}
-            slidesPerView={1}
-            autoplay={{
-              delay: 30000, // 30 seconds delay
-              disableOnInteraction: false,
-            }}
-            loop={true}
-            className="mySwiper"
+        <div className="w-full flex items-center justify-center gap-6">
+          {/* Left Button */}
+          <button
+            className="bg-[#2d4b41] text-white rounded-full p-3 shadow-lg hover:bg-[#718979] transition-colors"
+            onClick={() => swiperRef.current?.slidePrev()}
+            aria-label="Previous Service"
           >
-            {filteredServices.map((service, index) => (
-              <SwiperSlide key={index}>
-                <ServiceCard service={service} />
-              </SwiperSlide>
-            ))}
-          </Swiper>
+            <FaChevronLeft className="w-6 h-6" />
+          </button>
+
+          <div className="w-full max-w-4xl">
+            <Swiper
+              modules={[Autoplay, Navigation]}
+              onSwiper={swiper => (swiperRef.current = swiper)}
+              spaceBetween={30}
+              slidesPerView={1}
+              autoplay={{
+                delay: 30000, // 30 seconds delay
+                disableOnInteraction: false,
+              }}
+              loop={true}
+              className="mySwiper"
+            >
+              {filteredServices.map((service, index) => (
+                <SwiperSlide key={index}>
+                  <ServiceCard service={service} />
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
+
+          {/* Right Button */}
+          <button
+            className="bg-[#2d4b41] text-white rounded-full p-3 shadow-lg hover:bg-[#718979] transition-colors"
+            onClick={() => swiperRef.current?.slideNext()}
+            aria-label="Next Service"
+          >
+            <FaChevronRight className="w-6 h-6" />
+          </button>
         </div>
       </div>
     </section>

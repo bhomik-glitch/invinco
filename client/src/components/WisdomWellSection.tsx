@@ -23,7 +23,7 @@ const WisdomWellSection: React.FC = () => {
           {/* Right side - Recomendes */}
           <div className="flex-1">
             <h2 className="text-4xl md:text-5xl font-bold text-[#2d4b41] mb-8 text-center">
-              Candidates' Chronicles
+              Echoes of transformation
             </h2>
             <div className="w-24 h-1 bg-[#718979] mx-auto mb-12"></div>
             <div className="h-[700px] overflow-y-auto wisdom-well-scroll">

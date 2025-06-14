@@ -14,6 +14,7 @@ import SuccessStories from './components/SuccessStories'
 import Tagline from './components/Tagline'
 import WhySection from './components/WhySection'
 import WisdomWellSection from './components/WisdomWellSection'
+import RecentUpdates from './components/RecentUpdates'
 import { useState } from 'react'
 
 function App() {
@@ -25,13 +26,14 @@ function App() {
       <Popup />
       <Navbar onServiceSelect={setSelectedService} />
       <Tagline />
-      <SecondSection />
+      <RecentUpdates />
+      <Projects id="projects" />
       <SuccessStories />
       <MissionVission />
       <Services id="services" selectedService={selectedService} />
       <Partnership />
-      <Projects id="projects" />
       <Mentors id="mentors" />
+      <SecondSection />
       <WisdomWellSection />
       <HeroSection />
       <WhySection />

@@ -14,6 +14,7 @@ import vinod from "../assets/mentor/vinod.png"
 import pooja from "../assets/mentor/pooja.png"
 import hema from "../assets/mentor/hema.png"
 import tanugola from "../assets/mentor/tanugola.jpeg"
+import devendra from "../assets/mentor/Devendra Sharma's Photo 1.png"
 
 interface MentorData {
   name: string;
@@ -72,12 +73,6 @@ const mentorData: MentorData[] = [
     imageUrl: havilRajest,
   },
   {
-    name: "Prashita Dubey",
-    description:
-      "BA Honours English from LSR, former Social Media Head at Kalakriti (UN Millennium Fellowship). Now at Invincio as Social Media & Outreach Executive. Proud to have her as our first permanent team member.",
-    imageUrl: pratishta,
-  },
-  {
     name: "Radhika Bali",
     description:
       "Radhika Bali, Presence Sculptor & Image Consultant, empowers professionals in executive presence, communication, and branding. With 24+ years of experience, she is the Founder of Aक्स by Radhika and PSAI Delhi Chapter President.",
@@ -94,6 +89,12 @@ const mentorData: MentorData[] = [
     description:
       "Motivated Economics undergrad at LSR College with interests in consulting and decision-making. Junior Consultant at LSR Consulting Club, active in WICCI, skilled in Canva, event coordination, and driven by creative, impactful problem-solving.",
     imageUrl: tanugola,
+  },
+  {
+    name: "Devendra Sharma",
+    description:
+      "Advance Diploma in Digital Marketing, now working as Digital Marketing Executive. With 1 year of experience, he has successfully managed digital projects for 30+ companies across industries like Manufacturing, Pharma, Real Estate, and Fitness. A master of SEO, expert social media marketer, graphic designer, and video editor — Devendra Sharma brings powerful versatility to our team",
+    imageUrl: devendra,
   },
 ];
 

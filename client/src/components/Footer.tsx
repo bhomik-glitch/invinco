@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaLinkedin, FaInstagram, FaYoutube, FaDownload, FaEnvelope } from 'react-icons/fa';
+import { FaLinkedin, FaInstagram, FaYoutube, FaDownload, FaEnvelope, FaWhatsapp, FaFacebook } from 'react-icons/fa';
 
 const Footer: React.FC = () => {
   return (
@@ -31,6 +31,22 @@ const Footer: React.FC = () => {
               className="hover:text-[#718979] transition-colors"
             >
               <FaYoutube className="w-5 h-5" />
+            </a>
+            <a 
+              href="https://wa.me/918601407444" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="hover:text-[#718979] transition-colors"
+            >
+              <FaWhatsapp className="w-5 h-5" />
+            </a>
+            <a 
+              href="https://www.facebook.com/share/16JtoVqZTx/?mibextid=wwXIfr"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-[#718979] transition-colors"
+            >
+              <FaFacebook className="w-5 h-5" />
             </a>
           </div>
 

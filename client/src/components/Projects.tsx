@@ -2,39 +2,106 @@ import React from 'react'
 import pune1 from "../assets/projects/pune/punr-project-2.jpg"
 import pune2 from "../assets/projects/pune/pune-project-3.jpg"
 import pune3 from "../assets/projects/pune/pune-project-4.jpg"
-import pune4 from "../assets/projects/pune/pune-project.jpg"
-import ambala from "../assets/projects/ambala/image.png"
-import ambikapur from "../assets/projects/ambikapur/image.png"
-import katurpula1 from "../assets/projects/katurpula/katurpula1.webp"
-import katurpula2 from "../assets/projects/katurpula/katurpula2.webp"
-import katurpula3 from "../assets/projects/katurpula/katurpula3.webp"
-import katurpula4 from "../assets/projects/katurpula/katurpula4.webp"
-import katurpula5 from "../assets/projects/katurpula/katurpula5.webp"
+import punjab2 from "../assets/projects/punjab/img 2.jpg"
+import punjab3 from "../assets/projects/punjab/img 3.jpg"
+import punjab4 from "../assets/projects/punjab/img 4.jpg"
+import yodha1 from "../assets/projects/yodha/img 1 .jpg"
+import yodha2 from "../assets/projects/yodha/img 2 .jpg"
+import yodha3 from "../assets/projects/yodha/img 3 .jpg"
+import yodha4 from "../assets/projects/yodha/img 4 .jpg"
+import haryana1 from "../assets/projects/harayana/img 1.png"
+import chattisgarh1 from "../assets/projects/chattisgarh/img 1 .jpg"
+import chattisgarh2 from "../assets/projects/chattisgarh/img 2.jpg"
+import chattisgarh3 from "../assets/projects/chattisgarh/img 3 .jpg"
+// import ambala from "../assets/projects/ambala/image.png"
+// import ambikapur from "../assets/projects/ambikapur/image.png"
+// import katurpula1 from "../assets/projects/katurpula/katurpula1.webp"
+// import katurpula2 from "../assets/projects/katurpula/katurpula2.webp"
+// import katurpula3 from "../assets/projects/katurpula/katurpula3.webp"
+// import katurpula4 from "../assets/projects/katurpula/katurpula4.webp"
+// import katurpula5 from "../assets/projects/katurpula/katurpula5.webp"
+import eastSiang1 from "../assets/Sainik School East Siang/img1.jpg"
+import eastSiang2 from "../assets/Sainik School East Siang/img2.jpg"
+import eastSiang3 from "../assets/Sainik School East Siang/img3.jpg"
+import eastSiang4 from "../assets/Sainik School East Siang/img4.jpg"
+import kapurthala11_1 from "../assets/projects/class-11th kapurthala/img 1.jpg"
+import kapurthala11_2 from "../assets/projects/class-11th kapurthala/img 2.jpg"
+import kapurthala11_3 from "../assets/projects/class-11th kapurthala/img 3.jpg"
+import kapurthala11_4 from "../assets/projects/class-11th kapurthala/img 4.jpg"
+import ambikapur2 from "../assets/projects/infra-development/img 2 .jpg"
+import ambikapur3 from "../assets/projects/infra-development/img 3 .jpg"
+import ambikapur4 from "../assets/projects/infra-development/img 4 .jpg"
+import trainers1 from "../assets/projects/training the trainers/img 1.jpg"
+import trainers2 from "../assets/projects/training the trainers/img 2.jpg"
+import trainers3 from "../assets/projects/training the trainers/img 3.jpg"
+import trainers4 from "../assets/projects/training the trainers/img 4.jpg"
+import online1 from "../assets/projects/online/img 1.jpg"
+import online2 from "../assets/projects/online/img 2.jpg"
+import online3 from "../assets/projects/online/img 3 .jpg"
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Autoplay, Pagination } from 'swiper/modules'
 
+interface Project {
+  title: string;
+  description: string;
+  images: string[];
+  link?: string;
+}
+
 const Projects: React.FC<{ id?: string }> = ({ id }) => {
-  const projectData = [
+  const infraProjects: Project[] = [
     {
-      title: "First Project at YODDHAA Defence Institue, Pune",
-      description: "Successfully executed our first project, delivering expert-led training and strategic insights to aspiring defense candidates.",
-      images: [pune1, pune2, pune3, pune4]
+      title: "Sainik School Ambikapur",
+      description: "Hallmark personality development and infrastructure creation project at Sainik School, catapulting the training of aspirants to greater heights",
+      images: [ambikapur2, ambikapur3, ambikapur4]
     },
     {
-      title: "Second Project at SSB Guide Defense Academy, Ambala",
-      description: "Conducted our second project, fostering skill development and leadership training through immersive, real-world exercises.",
-      images: [ambala]
+      title: "Sainik School Kapurthala, Punjab",
+      description: "Training the next generation with precision! Custom-built structures for cadets to experience authentic realistic scenarios and prepare for life's challenges.",
+      images: [punjab2, punjab3, punjab4]
     },
     {
-      title: "Third Project at Sainik School, Ambikapur",
-      description: "Hallmark personality development and infrastructure creation project at Sainik School, catapulting the training of aspirants to greater heights",
-      images: [ambikapur]
+      title: "YODDHAA Defence Academy, Pune",
+      description: "With SSB centric outdoor tasks and psychological testing setups, this blends Invincio's pedagogy with region-specific mentoring, creating leaders with purpose.",
+      images: [yodha1, yodha2, yodha3, yodha4]
     },
     {
-      title: "Kapurthala Project for class 12th",
-      description: "A comprehensive training program designed specifically for class 12th students, focusing on academic excellence and career guidance.",
-      images: [katurpula1, katurpula2, katurpula3, katurpula4, katurpula5]
+      title: "SSB GUIDE DEFENCE ACADEMY, Ambala, Haryana",
+      description: "Where clarity meets challenge! Equipped with SSB-standard obstacles, individual task setups, and personality assessment zones, this flagship centre is designed for immersive, all-round preparation.",
+      images: [haryana1]
+    },
+    {
+      title: "SAINIK SCHOOL AMBIKAPUR, CHATTISGARH",
+      description: "A full-scale outdoor obstacle course and GTO training area constructed in challenging terrain to help cadets train with realism and purpose.",
+      images: [chattisgarh1, chattisgarh2, chattisgarh3]
     }
+  ]
+
+  const leapProjects: Project[] = [
+    {
+      title: "Sainik School Kapurthala Takes the LEAP Again! | Class 11 Students Step into Clarity & Confidence!!",
+      description: "LEAP isn't just another leadership program, it's a curated experience, built from armed forces-inspired practices and psychological mentoring",
+      images: [kapurthala11_1, kapurthala11_2, kapurthala11_3, kapurthala11_4]
+    },
+    {
+      title: "From naivety to awareness, from self-doubt to belief: Class 12 at Sainik School East Siang took the LEAP",
+      description: "Successfully completed our inaugural project by delivering expert-led training sessions and actionable strategic guidance to the future defenders of our nation at Sainik School, East Siang.",
+      images: [eastSiang1, eastSiang2, eastSiang3, eastSiang4]
+    },
+    {
+      title: "Mentoring the Mentors at SS Ambikapur: learning never ends!!",
+      description: "Empowering educators with advanced training methodologies and leadership skills to better guide the next generation of leaders",
+      images: [trainers1, trainers2, trainers3, trainers4]
+    },
+    {
+      title: "YODDHAA Defence Institute, Pune",
+      description: "Successfully executed our first project, delivering expert-led training and strategic insights to aspiring defense candidates.",
+      images: [pune1, pune2, pune3]
+    }
+  ]
+
+  const bytesProjects: Project[] = [
+    // Add bytesProjects here
   ]
 
   return (
@@ -42,56 +109,186 @@ const Projects: React.FC<{ id?: string }> = ({ id }) => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold text-[#2d4b41] mb-4">
-            Our Projects
+            Mission Accomplished
           </h2>
           <div className="w-24 h-1 bg-[#718979] mx-auto mb-4"></div>
         </div>
 
-        <div className="space-y-20 max-w-4xl mx-auto">
-          {projectData.map((project, index) => (
-            <div key={index} className={`flex flex-col md:flex-row gap-8 items-center ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
-              {/* Image Section */}
-              <div className="w-full md:w-1/2">
-                {project.images.length > 1 ? (
-                  <Swiper
-                    modules={[Autoplay, Pagination]}
-                    pagination={{ clickable: true }}
-                    autoplay={{
-                      delay: 3000,
-                      disableOnInteraction: false,
-                    }}
-                    className="rounded-lg shadow-lg"
-                  >
-                    {project.images.map((image, imgIndex) => (
-                      <SwiperSlide key={imgIndex}>
-                        <img
-                          src={image}
-                          alt={`${project.title} - Image ${imgIndex + 1}`}
-                          className="w-full h-[300px] object-cover rounded-lg"
-                        />
-                      </SwiperSlide>
-                    ))}
-                  </Swiper>
-                ) : (
-                  <img
-                    src={project.images[0]}
-                    alt={project.title}
-                    className="w-full h-[300px] object-cover rounded-lg shadow-lg"
-                  />
-                )}
-              </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-7xl mx-auto items-start">
+          {/* LEAP Module Section */}
+          <div className="flex flex-col gap-8">
+            <h3 className="text-2xl md:text-3xl font-bold text-[#2d4b41] text-center">
+              LEAP Module
+            </h3>
+            <div className="flex flex-col gap-8">
+              {leapProjects.map((project, index) => (
+                <div key={index} className="flex flex-col gap-8 items-center min-h-[500px]">
+                  {/* Image Section */}
+                  <div className="w-full">
+                    {project.images.length > 1 ? (
+                      <Swiper
+                        modules={[Autoplay, Pagination]}
+                        pagination={{ clickable: true }}
+                        autoplay={{
+                          delay: 3000,
+                          disableOnInteraction: false,
+                        }}
+                        className="rounded-lg shadow-lg"
+                      >
+                        {project.images.map((image, imgIndex) => (
+                          <SwiperSlide key={imgIndex}>
+                            <img
+                              src={image}
+                              alt={`${project.title} - Image ${imgIndex + 1}`}
+                              className="w-full h-[300px] object-cover rounded-lg"
+                            />
+                          </SwiperSlide>
+                        ))}
+                      </Swiper>
+                    ) : (
+                      <img
+                        src={project.images[0]}
+                        alt={project.title}
+                        className="w-full h-[300px] object-cover rounded-lg shadow-lg"
+                      />
+                    )}
+                  </div>
 
-              {/* Content Section */}
-              <div className="text-center md:text-left w-full md:w-1/2 p-6 bg-[#f8f9fa] rounded-lg shadow-md transform transition-transform hover:scale-105">
-                <h3 className="text-2xl font-semibold text-[#2d4b41] mb-4">
-                  {project.title}
-                </h3>
-                <p className="text-gray-600 leading-relaxed">
-                  {project.description}
-                </p>
+                  {/* Content Section */}
+                  <div className="w-full">
+                    <div className="bg-white p-6 rounded-lg shadow-md">
+                      <h3 className="text-2xl font-semibold text-[#2d4b41] mb-4">
+                        {project.title}
+                      </h3>
+                      <p className="text-gray-600 leading-relaxed">
+                        {project.description}
+                      </p>
+                      {project.link && (
+                        <a
+                          href={project.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-[#2d4b41] hover:text-[#1a2f27] font-medium mt-4 inline-block"
+                        >
+                          Learn More →
+                        </a>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Infra Development Section */}
+          <div className="flex flex-col gap-8">
+            <h3 className="text-2xl md:text-3xl font-bold text-[#2d4b41] text-center">
+              Infra Development
+            </h3>
+            <div className="flex flex-col gap-8">
+              {infraProjects.map((project, index) => (
+                <div key={index} className="w-full flex flex-col gap-8 items-center min-h-[500px]">
+                  {/* Image Section */}
+                  <div className="w-full">
+                    {project.images.length > 1 ? (
+                      <Swiper
+                        modules={[Autoplay, Pagination]}
+                        pagination={{ clickable: true }}
+                        autoplay={{
+                          delay: 3000,
+                          disableOnInteraction: false,
+                        }}
+                        className="rounded-lg shadow-lg"
+                      >
+                        {project.images.map((image, imgIndex) => (
+                          <SwiperSlide key={imgIndex}>
+                            <img
+                              src={image}
+                              alt={`${project.title} - Image ${imgIndex + 1}`}
+                              className="w-full h-[300px] object-cover rounded-lg"
+                            />
+                          </SwiperSlide>
+                        ))}
+                      </Swiper>
+                    ) : (
+                      <img
+                        src={project.images[0]}
+                        alt={project.title}
+                        className="w-full h-[300px] object-cover rounded-lg shadow-lg"
+                      />
+                    )}
+                  </div>
+
+                  {/* Content Section */}
+                  <div className="w-full">
+                    <div className="bg-white p-6 rounded-lg shadow-md">
+                      <h3 className="text-2xl font-semibold text-[#2d4b41] mb-4">
+                        {project.title}
+                      </h3>
+                      <p className="text-gray-600 leading-relaxed">
+                        {project.description}
+                      </p>
+                      {project.link && (
+                        <a
+                          href={project.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-[#2d4b41] hover:text-[#1a2f27] font-medium mt-4 inline-block"
+                        >
+                          Learn More →
+                        </a>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* Bytes to Breakthroughs Section */}
+        <div className="text-center mt-32">
+          <h3 className="text-2xl md:text-3xl font-bold text-[#2d4b41] mb-8 -ml-[625px]">
+            Bytes to Breakthroughs
+          </h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto px-4">
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden md:w-[150%]">
+              <div className="relative h-48">
+                <Swiper
+                  modules={[Pagination, Autoplay]}
+                  pagination={{ clickable: true }}
+                  autoplay={{ delay: 3000 }}
+                  className="h-full"
+                >
+                  <SwiperSlide>
+                    <img
+                      src={online1}
+                      alt="Online LEAP delivery - Image 1"
+                      className="w-full h-full object-cover"
+                    />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <img
+                      src={online2}
+                      alt="Online LEAP delivery - Image 2"
+                      className="w-full h-full object-cover"
+                    />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <img
+                      src={online3}
+                      alt="Online LEAP delivery - Image 3"
+                      className="w-full h-full object-cover"
+                    />
+                  </SwiperSlide>
+                </Swiper>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold mb-2 text-[#2d4b41]">LEAP delivery in digital mode - Distances no bar!!</h3>
+                <p className="text-gray-600">Breaking geographical barriers through innovative online delivery of the LEAP program, ensuring quality training reaches every corner of the nation.</p>
               </div>
             </div>
-          ))}
+          </div>
         </div>
       </div>
     </section>

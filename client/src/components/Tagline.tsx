@@ -6,6 +6,7 @@ import hero2 from "../assets/herosection/hero1.webp";
 import hero3 from "../assets/projects/pune/pune-project-4.jpg";
 import hero4 from "../assets/herosection/bgimage1.jpeg";
 import hero5 from "../assets/herosection/bgimage2.jpeg";
+import RecentUpdates from './RecentUpdates';
 
 const Tagline = () => {
   const images = [hero1, hero2, hero3, hero4, hero5];
@@ -71,6 +72,11 @@ const Tagline = () => {
             </a>
           </div> */}
         </div>
+      </div>
+
+      {/* Recent Updates Section */}
+      <div className="relative z-20 w-full">
+        <RecentUpdates />
       </div>
     </section>
   );
