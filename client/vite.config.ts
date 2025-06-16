@@ -17,4 +17,10 @@ export default defineConfig({
       },
     },
   },
+  resolve: {
+    alias: {
+      '@': '/src',
+    },
+  },
+  assetsInclude: ['**/*.jpg', '**/*.png', '**/*.jpeg'],
 })
