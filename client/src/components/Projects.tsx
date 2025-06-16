@@ -38,6 +38,12 @@ import trainers4 from "../assets/projects/training the trainers/img 4.jpg"
 import online1 from "../assets/projects/online/img 1.jpg"
 import online2 from "../assets/projects/online/img 2.jpg"
 import online3 from "../assets/projects/online/img 3 .jpg"
+import ssbEasy from "../assets/projects/ssb-easy/img 1.jpg"
+import holdingHands from "../assets/projects/holding hands/img 1.jpg"
+import consultancy from "../assets/projects/consultancy/img 1.jpg"
+import devender from "../assets/projects/devender/devender.jpg"
+import money from "../assets/projects/money/img 1.jpg"
+import debriefing from "../assets/projects/debriefing/img 1 .jpg"
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Autoplay, Pagination } from 'swiper/modules'
 
@@ -49,6 +55,29 @@ interface Project {
 }
 
 const Projects: React.FC<{ id?: string }> = ({ id }) => {
+  const leapProjects: Project[] = [
+    {
+      title: "Sainik School Kapurthala Takes the LEAP Again! | Class 11 Students Step into Clarity & Confidence!!",
+      description: "LEAP isn't just another leadership program, it's a curated experience, built from armed forces-inspired practices and psychological mentoring",
+      images: [kapurthala11_1, kapurthala11_2, kapurthala11_3, kapurthala11_4]
+    },
+    {
+      title: "From naivety to awareness, from self-doubt to belief: Class 12 at Sainik School East Siang took the LEAP",
+      description: "Successfully completed our inaugural project by delivering expert-led training sessions and actionable strategic guidance to the future defenders of our nation at Sainik School, East Siang.",
+      images: [eastSiang1, eastSiang2, eastSiang3, eastSiang4]
+    },
+    {
+      title: "Mentoring the Mentors at SS Ambikapur: learning never ends!!",
+      description: "Empowering educators with advanced training methodologies and leadership skills to better guide the next generation of leaders",
+      images: [trainers1, trainers2, trainers3, trainers4]
+    },
+    {
+      title: "YODDHAA Defence Academy, Pune",
+      description: "Successfully executed our first project, delivering expert-led training and strategic insights to aspiring defense candidates.",
+      images: [pune1, pune2, pune3]
+    }
+  ]
+
   const infraProjects: Project[] = [
     {
       title: "Sainik School Ambikapur",
@@ -77,31 +106,22 @@ const Projects: React.FC<{ id?: string }> = ({ id }) => {
     }
   ]
 
-  const leapProjects: Project[] = [
-    {
-      title: "Sainik School Kapurthala Takes the LEAP Again! | Class 11 Students Step into Clarity & Confidence!!",
-      description: "LEAP isn't just another leadership program, it's a curated experience, built from armed forces-inspired practices and psychological mentoring",
-      images: [kapurthala11_1, kapurthala11_2, kapurthala11_3, kapurthala11_4]
-    },
-    {
-      title: "From naivety to awareness, from self-doubt to belief: Class 12 at Sainik School East Siang took the LEAP",
-      description: "Successfully completed our inaugural project by delivering expert-led training sessions and actionable strategic guidance to the future defenders of our nation at Sainik School, East Siang.",
-      images: [eastSiang1, eastSiang2, eastSiang3, eastSiang4]
-    },
-    {
-      title: "Mentoring the Mentors at SS Ambikapur: learning never ends!!",
-      description: "Empowering educators with advanced training methodologies and leadership skills to better guide the next generation of leaders",
-      images: [trainers1, trainers2, trainers3, trainers4]
-    },
-    {
-      title: "YODDHAA Defence Institute, Pune",
-      description: "Successfully executed our first project, delivering expert-led training and strategic insights to aspiring defense candidates.",
-      images: [pune1, pune2, pune3]
-    }
-  ]
-
   const bytesProjects: Project[] = [
-    // Add bytesProjects here
+    {
+      title: "LEAP delivery in digital mode - Distances no bar!!",
+      description: "Breaking geographical barriers through innovative online delivery of the LEAP program, ensuring quality training reaches every corner of the nation.",
+      images: [online1, online2, online3]
+    },
+    {
+      title: "Hand-holding till you succeed!",
+      description: "Providing continuous support and guidance to help you achieve your goals and reach your full potential.",
+      images: [holdingHands]
+    },
+    {
+      title: "Finance! who says we don't understand! We have Conquered it",
+      description: "Mastering financial literacy and management to empower our future leaders with essential life skills.",
+      images: [money]
+    }
   ]
 
   return (
@@ -109,12 +129,12 @@ const Projects: React.FC<{ id?: string }> = ({ id }) => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold text-[#2d4b41] mb-4">
-            Mission Accomplished
+            Missions Accomplished
           </h2>
           <div className="w-24 h-1 bg-[#718979] mx-auto mb-4"></div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-7xl mx-auto items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-7xl mx-auto items-start relative">
           {/* LEAP Module Section */}
           <div className="flex flex-col gap-8">
             <h3 className="text-2xl md:text-3xl font-bold text-[#2d4b41] text-center">
@@ -156,7 +176,7 @@ const Projects: React.FC<{ id?: string }> = ({ id }) => {
 
                   {/* Content Section */}
                   <div className="w-full">
-                    <div className="bg-white p-6 rounded-lg shadow-md">
+                    <div className={`bg-white p-6 rounded-lg shadow-md ${project.title === "Sainik School Ambikapur" ? "pb-[113px]" : ""} ${project.title === "Sainik School Kapurthala, Punjab" ? "pb-[91px]" : ""} ${project.title === "YODDHAA Defence Academy, Pune" ? "pb-[83px]" : ""}`}>
                       <h3 className="text-2xl font-semibold text-[#2d4b41] mb-4">
                         {project.title}
                       </h3>
@@ -221,7 +241,7 @@ const Projects: React.FC<{ id?: string }> = ({ id }) => {
 
                   {/* Content Section */}
                   <div className="w-full">
-                    <div className="bg-white p-6 rounded-lg shadow-md">
+                    <div className={`bg-white p-6 rounded-lg shadow-md ${project.title === "Sainik School Ambikapur" ? "pb-[113px]" : ""} ${project.title === "Sainik School Kapurthala, Punjab" ? "pb-[93px]" : ""}`}>
                       <h3 className="text-2xl font-semibold text-[#2d4b41] mb-4">
                         {project.title}
                       </h3>
@@ -248,11 +268,11 @@ const Projects: React.FC<{ id?: string }> = ({ id }) => {
 
         {/* Bytes to Breakthroughs Section */}
         <div className="text-center mt-32">
-          <h3 className="text-2xl md:text-3xl font-bold text-[#2d4b41] mb-8 -ml-[625px]">
-            Bytes to Breakthroughs
+          <h3 className="text-2xl md:text-3xl font-bold text-[#2d4b41] mb-8">
+            LEAP delivery in digital mode - Distances no bar!!
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto px-4">
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden md:w-[150%]">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-7xl mx-auto px-4">
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <div className="relative h-48">
                 <Swiper
                   modules={[Pagination, Autoplay]}
@@ -286,6 +306,90 @@ const Projects: React.FC<{ id?: string }> = ({ id }) => {
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2 text-[#2d4b41]">LEAP delivery in digital mode - Distances no bar!!</h3>
                 <p className="text-gray-600">Breaking geographical barriers through innovative online delivery of the LEAP program, ensuring quality training reaches every corner of the nation.</p>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+              <div className="relative h-48">
+                <img
+                  src={ssbEasy}
+                  alt="SSB is Easy"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold mb-2 text-[#2d4b41]">SSB is Easy! Yes, Very Easy....</h3>
+                <p className="text-gray-600">From confusion to confidence—our online sessions turn SSB prep into a cakewalk!</p>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+              <div className="relative h-48">
+                <img
+                  src={consultancy}
+                  alt="Image Consultancy"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold mb-2 text-[#2d4b41]">Image Consultancy - I must present my originality!</h3>
+                <p className="text-gray-600">Empowering individuals to present their authentic selves through professional image consulting and personal branding.</p>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+              <div className="relative h-48">
+                <img
+                  src={devender}
+                  alt="Free Sessions for our Future Leader's Group Members"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold mb-2 text-[#2d4b41]">Free Sessions for our Future Leader's Group Members</h3>
+                <p className="text-gray-600">Exclusive complimentary training sessions designed to nurture and develop the next generation of leaders.</p>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+              <div className="relative h-48">
+                <img
+                  src={holdingHands}
+                  alt="Hand-holding till you succeed"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold mb-2 text-[#2d4b41]">Hand-holding till you succeed!</h3>
+                <p className="text-gray-600">Every step, every doubt, every drill—guided personally till success salutes you.</p>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+              <div className="relative h-48">
+                <img
+                  src={money}
+                  alt="Finance! who says we don't understand! We have Conquered it"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold mb-2 text-[#2d4b41]">Finance! who says we don't understand! We have Conquered it</h3>
+                <p className="text-gray-600">Mastering financial literacy and management to empower our future leaders with essential life skills.</p>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+              <div className="relative h-48">
+                <img
+                  src={debriefing}
+                  alt="Debriefing the Parents"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold mb-2 text-[#2d4b41]">Debriefing the Parents</h3>
+                <p className="text-gray-600">Keeping parents informed and involved in their child's development journey through regular updates and guidance sessions.</p>
               </div>
             </div>
           </div>
