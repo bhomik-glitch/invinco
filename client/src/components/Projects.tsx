@@ -106,24 +106,6 @@ const Projects: React.FC<{ id?: string }> = ({ id }) => {
     }
   ]
 
-  const bytesProjects: Project[] = [
-    {
-      title: "LEAP delivery in digital mode - Distances no bar!!",
-      description: "Breaking geographical barriers through innovative online delivery of the LEAP program, ensuring quality training reaches every corner of the nation.",
-      images: [online1, online2, online3]
-    },
-    {
-      title: "Hand-holding till you succeed!",
-      description: "Providing continuous support and guidance to help you achieve your goals and reach your full potential.",
-      images: [holdingHands]
-    },
-    {
-      title: "Finance! who says we don't understand! We have Conquered it",
-      description: "Mastering financial literacy and management to empower our future leaders with essential life skills.",
-      images: [money]
-    }
-  ]
-
   return (
     <section id={id} className="py-32 bg-[#eaeeed]/90">
       <div className="container mx-auto px-4">

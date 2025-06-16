@@ -7,7 +7,6 @@ import GpCaptVikramSingh from "../assets/mentor/Gp Capt Vikram Singh.jpg";
 import BrigSanjay from "../assets/mentor/sanjay.png";
 import havilSanjay from "../assets/mentor/havildarSanjay.png";
 import havilRajest from "../assets/mentor/havildarRajseh.png";
-import pratishta from "../assets/mentor/pratishta.png";
 import radhika from "../assets/mentor/radhika.png";
 import hina from "../assets/mentor/hina.png";
 import vinod from "../assets/mentor/vinod.png"
