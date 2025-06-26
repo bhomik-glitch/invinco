@@ -6,8 +6,7 @@ import offlineClasses from "../assets/offlineclasses.jpeg";
 import onlineClasses from "../assets/onlineClasses.jpeg";
 import cooperateTraining from "../assets/cooperateTraining2.jpeg"
 import sunny from "../assets/mentor/sunny.png"
-import 'swiper/css';
-import 'swiper/css/navigation';
+import 'swiper/swiper-bundle.css';
 
 interface Pedagogy {
   title: string;
