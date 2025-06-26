@@ -5,7 +5,6 @@ import AtharvPhoto from "../assets/client_photo/Atharv.jpg";
 import RudranshPhoto from "../assets/client_photo/Rudransh.jpg";
 import AdityaPhoto from "../assets/client_photo/Aditya.jpg";
 import SankalpPhoto from "../assets/client_photo/Sankalp.jpg";
-import BhomikPhoto from "../assets/client_photo/bhomik.jpg";
 
 // Gallery data
 const galleryData = [
@@ -28,11 +27,6 @@ const galleryData = [
     name: "SANKALP",
     text: "Sankalp Jaiswal , batch- PNDA 72255, SSB-21 SSB, Chest No.- 03",
     photo: SankalpPhoto
-  },
-  {
-    name: "BHOMIK",
-    text: "ex invincio student currently at IIT Delhi",
-    photo: BhomikPhoto
   }
 ];
 
