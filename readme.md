@@ -1,6 +1,5 @@
 # Invincio Services Web Platform
 
-[![Live Website](https://img.shields.io/badge/Live%20Site-invincioservices.com-brightgreen)](https://www.invincioservices.com/)
 
 ## Overview
 Invincio Services is a transformative mentoring and training platform that integrates military-inspired discipline, psychometric insights, and real-world applications across education, corporate, and skill development sectors. The website showcases our mission, offerings, projects, mentors, and success stories, and provides a seamless way for users to get in touch or learn more about our services.
